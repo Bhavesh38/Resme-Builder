@@ -1,0 +1,61 @@
+.allDesign {
+  background-color: rgb(241, 247, 252);
+}
+.allDesign_heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 2% 0 2%;
+  align-items: center;
+  /* position: fixed; */
+}
+.allDesign_heading > h4 {
+  font-weight: 600;
+}
+.allDesign_heading > button {
+  background-color: #05445e;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 10px gray;
+  border-radius: 20px;
+  padding: 2px 16px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+.allDesign_heading > button:hover,
+.proceed_button:hover {
+  background-color: #0b6890;
+}
+.proceed_button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #05445e;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 10px gray;
+  border-radius: 20px;
+  padding: 2px 16px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  border: none;
+}
+.allDesign_content {
+  display: flex;
+  /* padding: 0.2% 2% 2% 2%; */
+  border-top: 1px solid gray;
+  height: 90vh;
+}
+.allDesign_content_designs_examples {
+  flex: 0.3;
+  border-right: 1px solid gray;
+  padding: 1% 2% 2% 2%;
+}
+.allDesign_content_designs_examples_preview {
+  flex: 0.7;
+  padding: 1% 2% 2% 2%;
+}

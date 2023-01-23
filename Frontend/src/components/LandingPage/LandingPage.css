@@ -1,0 +1,70 @@
+.landing_page_div {
+  /* height: 100vh; */
+  text-align: center;
+}
+.landing_page_div > img {
+  /* transform: rotate(-44deg); */
+  height: 300px;
+  margin-top: 15%;
+  margin-right: auto;
+}
+.landing_page_content {
+  /* border: 1px solid red; */
+  color: rgb(108, 108, 108);
+  margin-top: -165px;
+}
+.landing_page_content_heading {
+  font-size: 3rem;
+  font-weight: 600;
+  display: block;
+  color: rgba(0, 0, 0, 0.578);
+  /* line-height: 5; */
+}
+.landing_page_content_demo {
+  margin: auto;
+  /* margin-right: 27%; */
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(27, 243, 175);
+  padding: 2px 32px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgb(185, 185, 185);
+}
+.landing_page_content_demo:hover {
+  background-color: rgb(82, 238, 189);
+  box-shadow: 0 0 2px rgb(52, 218, 166);
+  color: white;
+  box-shadow: 0 0 10px rgb(166, 165, 165);
+}
+.landing_page_div_learnMore {
+  margin-top: 100px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.landing_page_main_bottom {
+  background-color: rgba(231, 230, 230, 0.958);
+  /* background-image: url("https://img.freepik.com/free-photo/education-concept-pen-notebooks-white-table_117358-137.jpg?size=626&ext=jpg"); */
+  width: 100%;
+  text-align: center;
+  padding: 3% 0 0 0;
+}
+.landing_page_main_bottom > img {
+  height: 300px;
+  margin: auto;
+  text-align: center;
+}
+.landing_page_main_form {
+  background-color: rgba(40, 40, 37, 0.581);
+  width: 100%;
+  color: white;
+  padding: 1%;
+}
+
+@media screen and (max-width: 800px) {
+  .landing_page {
+    font-size: 0.9rem;
+  }
+}

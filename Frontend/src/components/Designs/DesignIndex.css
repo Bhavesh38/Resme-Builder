@@ -1,0 +1,22 @@
+.designindex {
+  background-color: #75e6da;
+  padding-top: 5%;
+  margin-bottom: 0;
+}
+.designindex_heading {
+  display: flex;
+  background-color: #05445e;
+  color: white;
+  padding: 2% 2% 2% 2%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.designindex_heading > h2 {
+  margin-right: 24px;
+  cursor: pointer;
+}
+.designindex_heading > h2:hover {
+  color: rgb(221, 218, 218);
+}
+.designindex_heading_border_bottom {
+  border-bottom: 1px solid rgb(160, 160, 160);
+}

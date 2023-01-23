@@ -4,7 +4,6 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import authRoutes from "./routes/auth.js";
-// const authRouter = require("./controllers/auth");
 
 
 const app = express();
@@ -15,12 +14,11 @@ app.use(cors());
 
 
 //middleware and routes
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }))
+
 app.use('/user', authRoutes);
-// app.use("/blog", blogRouter);
-// app.use("/user", userRouter);
-app.get('/temp', (req, res) => {
+
+
+app.get('/', (req, res) => {
     res.send('Hello World!')
 });
 mongoose.connect(process.env.MONGO_URL, {

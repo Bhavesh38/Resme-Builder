@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Moon+Dance&family=Sofia+Sans:ital@1&display=swap");
+.navigationbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px gray;
+  position: fixed;
+  width: 100%;
+  font-size: 1.3rem;
+  align-items: center;
+  z-index: 2;
+}
+.navigationbar_left,
+.navigationbar_right {
+  display: flex;
+  justify-content: space-between;
+}
+.navigationbar_left > a,
+.navigationbar_right > a {
+  text-decoration: none;
+  margin-right: 24px;
+  cursor: pointer;
+  color: black;
+}
+.navigationbar_left > a:hover,
+.navigationbar_right > a:hover {
+  color: rgb(121, 114, 114);
+}
+.navigationbar_mid {
+  font-family: "Moon Dance", cursive;
+  text-decoration: none;
+  color: rgb(27, 243, 175);
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-style: italic;
+  /* text-shadow: 0 0 10px rgb(27, 243, 175); */
+}
+.navigationbar_mid:hover {
+  color: rgb(68, 227, 176);
+}
+
+.navigationbar_right_signin > div > span {
+  background-color: #05445e;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 10px gray;
+  border-radius: 20px;
+  padding: 2px 16px;
+  cursor: pointer;
+}
+.navigationbar_right_signin > div > span:hover {
+  background-color: #0b6890;
+}
+.user_profile_page {
+  position: absolute;
+  right: 0;
+  margin-top: 7px;
+  /* margin-right: 12px; */
+  display: block;
+  background-color: rgb(213, 208, 208);
+  color: rgb(0, 0, 0);
+  /* border-radius: 5px; */
+  /* padding: 4px 0; */
+  width: 100px;
+}
+.user_profile_page > a,
+.user_profile_page > span {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 2px 6px;
+  cursor: pointer;
+  /* box-shadow: 0 0 10px white; */
+}
+.user_profile_page > a:hover,
+.user_profile_page > span:hover {
+  background-color: rgb(137, 133, 133);
+  color: white;
+}
+.profileDivOpen {
+  display: none;
+}
+.navigationbar_right_signin_signIn_btn {
+  background-color: #05445e;
+  color: white;
+  text-decoration: none;
+  padding: 2px 12px;
+  border-radius: 19px;
+  box-shadow: 0 0 5px gray;
+}
+.navigationbar_right_signin_signIn_btn:hover {
+  background-color: #0b6890;
+  color: white;
+}
+
+/* .navigationbar_right_signin_signIn_btn {
+  color: white;
+  background-color: rgba(40, 40, 37, 0.581);
+  box-shadow: 0 0 10px gray;
+  border-radius: 20px;
+  padding: 2px 16px;
+  text-decoration: none;
+}
+.navigationbar_right_signin > div {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.navigationbar_right_signin:hover {
+  background-color: rgba(16, 16, 16, 0.581);
+  box-shadow: 0 0 10px rgb(101, 99, 99);
+  color: rgb(255, 255, 255);
+} */
+.navbar_icon {
+  display: none;
+}
+@media screen and ((min-width: 760px) and (max-width: 875px)) {
+  .navigationbar {
+    font-size: 1rem;
+  }
+  .navigationbar_mid {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and ((min-width: 685px) and (max-width: 760px)) {
+  .navigationbar {
+    font-size: 0.7rem;
+  }
+  .navigationbar_mid {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and ((min-width: 0) and (max-width: 685px)) {
+  .navigationbar_left,
+  .navigationbar_right {
+    display: none;
+  }
+  .navigationbar_mid {
+    font-size: 1rem;
+  }
+  .navbar_icon {
+    display: inline;
+  }
+  .navbar_item_on_short_device {
+    position: absolute;
+    right: 0;
+    display: block;
+    background-color: #05445e;
+  }
+  .navbarToggleOn {
+    display: none;
+  }
+  .navbar_item_on_short_device > a,
+  .navbar_item_on_short_device > div,
+  .navbarToggleOn > a,
+  .navbarToggleOn > div {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-bottom: 1px solid rgb(133, 133, 133);
+  }
+}
