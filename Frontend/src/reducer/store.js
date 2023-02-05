@@ -6,4 +6,4 @@ export default configureStore({
         resumeSlice: resumeSlice,
         authSlice: authSlice
     }
-})
+});

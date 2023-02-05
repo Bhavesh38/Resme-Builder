@@ -1,11 +1,13 @@
 import React from 'react'
 
 const Reviews = () => {
+
+
     return (
-        <div>
-            Reviews
+        <div style={{ paddingTop: "6%" }}>
         </div>
     )
 }
 
 export default Reviews;
+

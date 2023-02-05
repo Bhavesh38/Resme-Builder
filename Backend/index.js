@@ -19,12 +19,12 @@ app.use('/user', authRoutes);
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World!');
 });
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(() => app.listen(process.env.PORT, () => console.log("Server is running on port ", process.env.PORT))).catch(error => console.log(error));
+}).then(() => app.listen(process.env.PORT || 3001, () => console.log("Server is running on port ", process.env.PORT))).catch(error => console.log(error));
 
 
 // mongoose.connect(process.env.MONGO_URL, () => console.log(`DB is successfully connected`));

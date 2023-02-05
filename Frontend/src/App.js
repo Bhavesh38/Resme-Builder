@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage/LandingPage';
 import Login from './components/LoginPage/Login';
 import Register from './components/LoginPage/Register';
-import Resume1 from './components/Resume1/Resume1';
 import About from "./components/About/About";
 import Reviews from "./components/Reviews/Reviews";
 import Docs from "./components/Docs/Docs";
