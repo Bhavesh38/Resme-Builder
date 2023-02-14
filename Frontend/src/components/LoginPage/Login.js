@@ -28,7 +28,6 @@ const Login = () => {
 
     const handleClick = (e) => {
         e.preventDefault();
-        console.log(loginFormData);
         dispatch(login(loginFormData, navigate));
         // setLoginFormData({
         //     email: "",
@@ -50,7 +49,6 @@ const Login = () => {
 
         const result = res?.profileObj;
         const token = res?.tokenId;
-        console.log("Login successful.");
         if (res) {
             console.log(res);
         }

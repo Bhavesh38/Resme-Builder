@@ -35,7 +35,7 @@ const NavigationBar = () => {
 
 
         setUser(JSON.parse(localStorage.getItem("profile")));
-    }, [location, logout, user?.token])
+    }, [user?.token])
     return (
         <div className='navigationbar'>
             <div className='navigationbar_left'>

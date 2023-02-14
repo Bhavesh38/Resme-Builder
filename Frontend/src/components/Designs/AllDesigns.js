@@ -7,7 +7,7 @@ const AllDesigns = () => {
         <div className='allDesign'>
             <div className='allDesign_heading'>
                 <h4>Select any design to proceed.</h4>
-                <button>Proceed <KeyboardTabIcon /></button>
+                <button>Select & Proceed <KeyboardTabIcon /></button>
             </div>
             <div className='allDesign_content'>
                 <div className='allDesign_content_designs_examples'>
